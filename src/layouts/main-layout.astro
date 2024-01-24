@@ -1,0 +1,20 @@
+---
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
+import '../styles/global.css';
+---
+
+<html lang='en'>
+  <meta charset='UTF-8' />
+  <meta name='description' content='Astro description' />
+  <meta name='viewport' content='width=device-width' />
+  <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+  <meta name='generator' content={Astro.generator} />
+  <body>
+    <Navbar />
+    <article>
+      <slot />
+    </article>
+    <Footer />
+  </body>
+</html>
