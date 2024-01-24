@@ -2,11 +2,7 @@ import { useState } from 'react';
 import styles from '../styles/navbar.module.css';
 
 export default function Navbar() {
-  const [toggle, setToggle] = useState(false);
 
-  function handleToggle() {
-    setToggle(!toggle);
-  }
 
   return (
     <nav className={styles.navbar}>

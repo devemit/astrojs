@@ -1,1 +1,22 @@
-<h1>Intro page</h1>
+---
+import styles from '../styles/intro.module.css';
+---
+
+<main class={styles.main}>
+  <div class={styles.desc}>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, facilis!</h1>
+    <br />
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus animi nobis suscipit beatae
+      eum iste doloribus aut ducimus exercitationem perferendis reprehenderit itaque laudantium qui
+      ab et consequuntur, nisi praesentium velit?
+    </p>
+  </div>
+  <div class={styles.image_container}>
+    <img
+      src='https://images.unsplash.com/photo-1542640244-7e672d6cef4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      alt='bg-image'
+      class={styles.image}
+    />
+  </div>
+</main>

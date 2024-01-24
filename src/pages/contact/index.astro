@@ -1,7 +1,21 @@
 ---
 import MainLayout from '../../layouts/main-layout.astro';
+import styles from '../../styles/contact.module.css';
 ---
 
 <MainLayout title='About page'>
-  <h1>Welcome to <span class='text-gradient'>Contact</span></h1>
+  <h2 class={styles.title}>Contact Form</h2>
+
+  <form action='#' method='post'>
+    <label for='name'>Name:</label>
+    <input type='text' id='name' name='name' required />
+
+    <label for='email'>Email:</label>
+    <input type='email' id='email' name='email' required />
+
+    <label for='message'>Message:</label>
+    <textarea id='message' name='message' rows='4' required></textarea>
+
+    <button type='submit'>Submit</button>
+  </form>
 </MainLayout>

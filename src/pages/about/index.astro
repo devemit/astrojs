@@ -1,7 +1,45 @@
 ---
 import MainLayout from '../../layouts/main-layout.astro';
+import styles from '../../styles/about.module.css';
 ---
 
 <MainLayout title='About page'>
-  <h1>Welcome to <span class='text-gradient'>About</span></h1>
+  <div class={styles.about}>
+    <section class={styles.about_description}>
+      <h1>Whats different about Manage?</h1>
+      <p>
+        Manage provides all the functionality your team needs, without the complexity. Our software
+        is tailor made for modern digital product teams.
+      </p>
+    </section>
+    <section class={styles.list}>
+      <div class={styles.number}>
+        <button>01</button>
+        <span>Track company-wide progress</span>
+      </div>
+      <div class={styles.text}>
+        See how your day to day tasks fit into the wider vision. Go from tracking progress at the
+        milestone level all the way down to the smallest of details. Never lose sight to the bigger
+        picture again.
+      </div>
+      <div class={styles.number}>
+        <button>01</button>
+        />
+        <span>Advanced built in reports</span>
+      </div>
+      <div class={styles.text}>
+        Set internal delivery estimates and track progress toward company goals. Our customisable
+        dashboard helps you build out the reports you need to keep key stakeholders informed.
+      </div>
+      <div class={styles.number}>
+        <button>01</button>
+
+        <span>Everything you need in one place</span>
+      </div>
+      <div class={styles.text}>
+        Stop jumping from one service to another to communicate, store files, track tasks and share
+        documents. Manage offers all in one team productivity solution.
+      </div>
+    </section>
+  </div>
 </MainLayout>
